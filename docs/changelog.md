@@ -6,6 +6,42 @@ template: overrides/main.html
 
 ## Material for MkDocs
 
+### 7.1.10 <small>_ July 10, 2021</small>
+
+- Refactored appearance of back-to-top button
+- Fixed graceful handling of search when browsing locally
+
+### 7.1.9 <small>_ June 25, 2021</small>
+
+- Improved search language support for Thai and Hindi
+- Fixed #2761: License comments lined up at end of file
+
+### 7.1.8 <small>_ June 12, 2021</small>
+
+- Refactored analytics integration (because of MkDocs 1.2)
+- Added support for Google Analytics 4 (`gtag.js`)
+- Fixed missing escape for `aria-label` in footer links
+
+### 7.1.7 <small>_ June 6, 2021</small>
+
+- Improved screen reader support
+
+### 7.1.6 <small>_ May 30, 2021</small>
+
+- Deprecated `seealso` admonition qualifier
+- Added Mongolian and updated Chinese translations
+- Fixed #2429: Version selector not touch-friendly on Android devices
+- Fixed #2703: Printed 'Initializing search' albeit ready on mobile
+
+### 7.1.5 <small>_ May 19, 2021</small>
+
+- Fixed #2655: Details breaking page margins on print
+
+### 7.1.4 <small>_ May 6, 2021</small>
+
+- Added support for git-revision-date-localized plugin creation date
+- Improved footnote styles on `:target` and `:focus`
+
 ### 7.1.3 <small>_ April 24, 2021</small>
 
 - Fixed #2586: Empty table of contents shown (7.1.2 regression)

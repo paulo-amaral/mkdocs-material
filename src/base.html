@@ -143,9 +143,7 @@
 
     <!-- Analytics -->
     {% block analytics %}
-      {% if config.google_analytics %}
-        {% include "partials/integrations/analytics.html" %}
-      {% endif %}
+      {% include "partials/integrations/analytics.html" %}
     {% endblock %}
 
     <!-- Custom front matter -->
@@ -341,11 +339,11 @@
           <a
             href="#"
             class="md-top md-icon"
-            title="{{ lang.t('top.title') }}"
             data-md-component="top"
             data-md-state="hidden"
           >
             {% include ".icons/material/arrow-up.svg" %}
+            {{ lang.t('top.title') }}
           </a>
         {% endif %}
       </main>
@@ -386,7 +384,8 @@
         "search.result.other",
         "search.result.more.one",
         "search.result.more.other",
-        "search.result.term.missing"
+        "search.result.term.missing",
+        "select.version.title"
       ] -%}
         {%- set _ = translations.update({ key: lang.t(key) }) -%}
       {%- endfor -%}
